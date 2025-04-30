@@ -373,9 +373,13 @@
         }
 
         .budget-card .budget-amount {
-            font-size: 1.2em;
-            font-weight: 600;
-        }
+    font-size: 1.1em; /* Reduz um pouco o tamanho da fonte */
+    font-weight: 600;
+    word-wrap: break-word; /* Quebra o texto se necessário */
+    overflow-wrap: break-word; /* Garante que o texto não ultrapasse o limite */
+    max-width: 100%; /* Limita o tamanho ao container */
+    text-align: center; /* Centraliza o texto */
+}
 
         .roi-1 .budget-amount {
             color: var(--red-color);
